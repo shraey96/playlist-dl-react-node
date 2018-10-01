@@ -1,0 +1,31 @@
+.input-div{
+  position: relative;
+  padding: 20px;
+  top: 20px;
+  left: 20px;
+}
+
+.input-div > label{
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease;
+}
+
+.input-div > input{
+  width: 30%;
+  height: 30px;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+
+.input-text:focus + .input-label, .input-text:valid + .input-label {
+  top: 0;
+  font-size: 14px;
+}
+
+.input-text:focus{
+  outline: none;
+  border-bottom: 1px solid blue;
+}

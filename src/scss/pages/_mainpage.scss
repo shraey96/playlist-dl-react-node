@@ -1,0 +1,33 @@
+.app-container{
+  background: #d1d1d1;
+  // height: 100vh;
+  height: 100vh;
+  .app-container-content{
+  margin: 0 auto;
+  border: 1px solid red;
+  max-width: 700px;
+  padding-top: 120px;
+  }
+}
+
+.video-card{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+
+  .video-card-links{
+    display: flex;
+    border: 1px solid black;
+    padding: 20px;
+    a{
+      margin-left: 10px;
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+}
